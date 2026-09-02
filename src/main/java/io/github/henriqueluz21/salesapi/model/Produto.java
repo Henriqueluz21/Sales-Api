@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "tb_produto")
+@Table(name = "Produto")
 public class Produto {
 
     @Id
@@ -15,7 +15,7 @@ public class Produto {
     @Column(name = "nome", length = 100 )
     private String nome;
 
-    @Column(name = "desc", length = 255 )
+    @Column(name = "descricao", length = 255 )
     private String desc;
 
     @Column(name = "preco", precision = 16, scale = 2)
